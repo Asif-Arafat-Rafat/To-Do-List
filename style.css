@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg,red,purple);
+}
+.card{
+    height: 100%;
+    width: 60%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:antiquewhite;
+    border-radius: 60px;
+}
+.title{
+    font-size: 45px;
+}
+.enter{
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+.inputtask{
+    background-color: white;
+    border-radius: 60px;
+}
+.enter-task{
+    background-color: transparent;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.Add{
+    height: 60px;
+    border-radius: 70px;
+    background-color: orange;
+    width: 100px;
+    border: 0;
+    outline: 0;
+    
+}
+ 
+ul li{
+    margin-top:15px;
+    font-size: 35px;
+    padding: 5px 0px 10px 45px;
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+    list-style:none;
+    position: relative;
+    text-decoration: underline;
+}
+
+ul li::before{
+    content: '';
+    position:absolute;
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url('images/unchecked.png');
+    background-position: center;
+    top: 12px;   
+    left: 0px;
+}
+.checked{
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url('images/checked.png');
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
